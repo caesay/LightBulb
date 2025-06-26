@@ -22,7 +22,7 @@ public static class Program
     public static string ExecutableDirPath { get; } = AppContext.BaseDirectory;
 
     public static string ExecutableFilePath { get; } =
-        Path.ChangeExtension(Assembly.Location, "exe");
+        System.Diagnostics.Process.GetCurrentProcess().MainModule!.FileName;
 
     public static string ProjectUrl { get; } = "https://github.com/Tyrrrz/LightBulb";
 

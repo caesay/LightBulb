@@ -1,0 +1,1 @@
+dotnet publish LightBulb\LightBulb.csproj -o publish -r win-x64 -c Release --self-contained -p:EnableCompressionInSingleFile=true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true
